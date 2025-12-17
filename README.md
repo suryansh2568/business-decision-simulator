@@ -5,7 +5,6 @@
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B)
 ![XGBoost](https://img.shields.io/badge/ML-XGBoost-orange)
-![Docker](https://img.shields.io/badge/Deployment-Docker-2496ED)
 
 ## Overview
 The **Business Strategy Simulator** is an interactive Decision Support System (DSS) designed to help managers and strategists visualize the impact of their decisions before spending a single dollar.
@@ -42,7 +41,6 @@ The simulator doesn't just fit data; it simulates the economic "physics" of 5 di
 * **Explainability:** [SHAP](https://shap.readthedocs.io/) (Model Interpretability)
 * **Data Processing:** Pandas, NumPy
 * **Visualization:** Matplotlib
-* **Deployment:** Docker
 
 ## How It Works (The Logic)
 The app generates synthetic training data on the fly based on economic principles:
@@ -58,21 +56,6 @@ The app generates synthetic training data on the fly based on economic principle
 
 ## Installation & Usage
 
-### Option 1: Run with Docker (Recommended)
-This guarantees the app runs exactly as intended without environment issues.
-
-1.  **Build the container:**
-    ```bash
-    docker build -t business-sim .
-    ```
-
-2.  **Run the app:**
-    ```bash
-    docker run -p 8501:8501 business-sim
-    ```
-    Open your browser to `http://localhost:8501`.
-
-### Option 2: Run Locally (Python)
 1.  **Clone the repository:**
     ```bash
     git clone [https://github.com/yourusername/business-decision-simulator.git](https://github.com/yourusername/business-decision-simulator.git)
@@ -93,5 +76,4 @@ This guarantees the app runs exactly as intended without environment issues.
 ```text
 ├── app.py               # Main application logic (UI + ML + Physics)
 ├── requirements.txt     # Python dependencies
-├── Dockerfile           # Docker configuration
 └── README.md            # Documentation
